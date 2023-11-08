@@ -1,0 +1,381 @@
+.banner {
+	height: 100vh;
+}
+.homeScreen {
+	position: absolute;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+.banner-container {
+	margin-top: 25px;
+	height: 85%;
+	width: 95%;
+	/* border: 2px dashed #FFFFFF; */
+}
+.info-bar {
+	width: 100%;
+	/* background: #989898; */
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+.profile-container {
+	gap: 15px;
+}
+#timeIcon {
+	padding: 0 10px;
+}
+#timeIcon i {
+	font-size: 60px;
+	color: #34A1E4;
+}
+
+#greetingContainer {
+	align-items: flex-start;
+}
+
+#greeting h1 {
+	font-family: 'GilroyExtraBold', sans-serif;
+	font-size: 35px;
+}
+
+#greetingLocation {
+	font-size: 18px;
+	letter-spacing: 1px;
+	-webkit-text-stroke: 1px #56AFE7;
+	color: #56AFE7;
+}
+#greetingLocation i{
+	font-size: 12px;
+	-webkit-text-stroke: 0;
+}
+
+.homeScreenTime h1 {
+	font-family: 'GilroyExtraBold', sans-serif;
+	font-size: 45px;
+	padding: 0 10px;
+}
+
+.homeSectionsContainer {
+	justify-content: space-between;
+	width: 100%;
+}
+#sectionCard {
+	align-items: flex-end;
+	width: 23%;
+	height: 200px;
+	border-radius: 10px;
+	transition: 0.25s;
+}
+#sectionCard:hover {
+	outline: 4px solid #ECECEC;
+	outline-offset: 3px;
+	cursor: pointer;
+	transition: 0.25s;
+}
+
+#sectionCard:hover p {
+	color: #ECECEC;
+	backdrop-filter: grayscale(0%);
+	transition: 0.2s;
+}
+
+#sectionCard p {
+	color: #56AFE7;
+	height: 125%;
+	width: 100%;
+	font-family: 'GilroyExtraBold', sans-serif;
+	font-size: 28px;
+	backdrop-filter: grayscale(100%);
+	transition: 0.2s;
+}
+
+
+
+
+.clockContainer {
+	align-items: flex-start;
+}
+.lockScreenTime h1 {
+	font-size: 85px;
+	color: #56AFE7;
+	font-family: 'GilroyExtraBold', sans-serif;
+}
+.lockScreenDate h1 {
+	font-size: 40px;
+}
+
+#lockScreen {
+	background: url('../assets/videos/background.png');
+	background-size: cover;
+}
+
+#homeBackground {
+	background: url('../assets/videos/background.png');
+	background-size: cover;
+}
+
+#headerBackground {
+	background: url('../assets/videos/background.png');
+	background-size: cover;
+}
+
+.lockScreenContainer {
+	position: absolute;
+	justify-content: flex-end;
+	height: 85%;
+	width: 95%;
+	/* border: 2px dashed #FFFFFF; */
+}
+
+.lockInfoContainer {
+	width: 95%;
+	justify-content: space-between;
+}
+
+.lockButtons {
+	height: 100%;
+	align-items: flex-end;
+	gap: 30px;
+}
+.lockButtons button {
+	width: 70px;
+	height: 70px;
+	border-radius: 25px;
+	scale: 1.0;
+	transition: 0.3s;
+}
+.lockButtons button:hover {
+	scale: 1.05;
+	transition: 0.3s;
+}
+.lockButtons i {
+	font-size: 20px;
+}
+
+.lockButtons #playPauseBtn {
+	background: #56AFE766;
+	border: 2px solid #FFFFFF;
+	transition: 0.3s;
+}
+.lockButtons #playPauseBtn:hover {
+	filter: drop-shadow(0 0 15px #56AFE7A5);
+	transition: 0.3s;
+}
+
+#quitBtn {
+	background: #FFBBBB66;
+	border: 2px solid #FFFFFF;
+}
+#quitBtn:hover {
+	filter: drop-shadow(0 0 15px #FFBBBBA5);
+	transition: 0.3s;
+}
+
+#loginBtn {
+	background: #56AFE766;
+	border: 2px solid #FFFFFF;
+}
+#loginBtn:hover {
+	filter: drop-shadow(0 0 15px #56AFE7A5);
+	transition: 0.3s;
+}
+
+
+.quotesContainer {
+	position: absolute;
+	justify-content: flex-start;
+}
+
+.quoteBox {
+	width: 100%;
+	height: 100%;
+}
+.quoteBox .iframe {
+	width: 100%;
+	height: 100%;
+}
+
+
+.breatheContainer {
+	position: absolute;
+	justify-content: flex-start;
+}
+
+.breatheBox {
+	width: 100%;
+	height: 100%;
+}
+.breatheBox .iframe {
+	width: 100%;
+	height: 100%;
+}
+.breatheBox video {
+	border-radius: 10px;
+	height: 100%;
+}
+
+
+
+.storiesContainer {
+	position: absolute;
+	justify-content: flex-start;
+}
+
+.storyContainer {
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	gap: 30px;
+	width: 100%;
+}
+
+#storyCard {
+	width: 23%;
+	height: 19%;
+	border-radius: 10px;
+	filter: brightness(75%) grayscale(40%);
+}
+
+#storyCard:hover {
+	outline: 4px solid #ECECEC;
+	outline-offset: 3px;
+	filter: none;
+	cursor: pointer;
+	transition: 0.25s;
+}
+
+#storyCard:hover p {
+	color: #FFFFFF;
+	background: linear-gradient(45deg, #0C243390, #1C71A590);
+	backdrop-filter: blur(8px);
+	border-radius: 10px;
+	visibility: visible;
+}
+
+#storyCard p {
+	height: 100%;
+	font-size: larger;
+	font-weight: bold;
+	text-align: center;
+	padding: 0px 15px;
+	visibility: hidden;
+}
+
+.storyDetails {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 90%;
+	margin-bottom: 20px;
+}
+
+.storyTitle {
+	font-family: 'GilroyExtraBold', sans-serif;
+}
+
+
+
+.gamesContainer {
+	position: absolute;
+	justify-content: flex-start;
+}
+
+#gamecard {
+	width: 180px;
+	height: 180px;
+	border-radius: 10px;
+	filter: grayscale(100%);
+}
+#gamecard:hover {
+	outline: 4px solid #ECECEC;
+	outline-offset: 3px;
+	cursor: pointer;
+	filter: none;
+	transition: 0.25s;
+}
+
+#gamecard:hover p {
+	color: #FFFFFF;
+	background: linear-gradient(45deg, #0C243390, #1C71A590);
+	backdrop-filter: blur(8px);
+	border-radius: 10px;
+	visibility: visible;
+}
+
+#gamecard p {
+	height: 100%;
+	width: 100%;
+	font-size: larger;
+	font-weight: bold;
+	text-align: center;
+	padding: 0px 10px;
+	visibility: hidden;
+}
+
+.gameContainer {
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	gap: 30px;
+	width: 100%;
+}
+
+.gameDetails {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 90%;
+	margin-bottom: 20px;
+}
+.gameTitle {
+	font-family: 'GilroyExtraBold', sans-serif;
+}
+
+
+.navigationTitle {
+	text-align: center;
+	font-family: 'GilroyExtraBold', sans-serif;
+	font-size: 40px;
+	margin-left: 20px;
+}
+
+.navigation {
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-bottom: 40px;
+}
+.navigation button {
+	padding: 8px 12px;
+	border: none;
+}
+.navigation button:hover {
+	background: #3F81AA;
+}
+
+#myVideo {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	min-width: 100%;
+	/* min-height: 100%; */
+	filter: brightness(40%) contrast(90%) saturate(50%) hue-rotate(230deg);
+}
+
+
+.splashScreen {
+	height: 100vh;
+	width: 100%;
+	background: #0E10116B;
+
+	animation-name: loading;
+	animation-duration: 2s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: 1;
+}
+
+.splashScreen img {
+	width: 60%;
+}
